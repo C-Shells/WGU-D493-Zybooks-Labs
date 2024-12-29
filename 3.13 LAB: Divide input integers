@@ -1,0 +1,8 @@
+user_num = int(input())
+div_num = int(input())
+
+div_1 = (user_num // div_num)
+div_2 = (div_1 // div_num)
+div_3 = (div_2 // div_num)
+
+print (div_1, div_2, div_3)
