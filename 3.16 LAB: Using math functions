@@ -1,0 +1,12 @@
+import math
+x = float(input())
+y = float(input())
+z = float(input())
+
+calc_1 = pow(x,z)
+calc_2 = pow(x,pow(y,z))
+calc_3 = abs(x - y)
+calc_4 = math.sqrt(calc_1)
+
+
+print (f'{calc_1:.2f} {calc_2:.2f} {calc_3:.2f} {calc_4:.2f}')
