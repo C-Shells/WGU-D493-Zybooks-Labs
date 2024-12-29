@@ -1,0 +1,11 @@
+import math
+
+key_frequency = int(input())
+r = pow(2,1/12)
+calc_1 = key_frequency * pow(r,0)
+calc_2 = key_frequency * pow(r,1)
+calc_3 = key_frequency * pow(r,2)
+calc_4 = key_frequency * pow(r,3)
+
+
+print(f'{calc_1:.2f} Hz\n{calc_2:.2f} Hz\n{calc_3:.2f} Hz\n{calc_4:.2f} Hz')
