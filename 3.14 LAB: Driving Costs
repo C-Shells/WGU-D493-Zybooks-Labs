@@ -1,0 +1,6 @@
+miles_per_gallon = float(input())
+gas_cost = float(input())
+
+mileage = (gas_cost / miles_per_gallon)
+
+print(f'{mileage * 20:.2f} {mileage * 75:.2f} {mileage * 500:.2f}')
