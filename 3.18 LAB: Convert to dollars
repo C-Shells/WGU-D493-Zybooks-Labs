@@ -1,0 +1,8 @@
+quarters = int(input())
+dimes = int(input())
+nickels = int(input())
+pennies = int(input())
+
+value = (quarters * .25) + (dimes * .10) + (nickels * .05) + (pennies * .01)
+
+print (f'Amount: ${value:.2f}')
