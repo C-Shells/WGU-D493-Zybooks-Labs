@@ -1,0 +1,8 @@
+phone_number = int(input())
+
+area_code1 = phone_number //10000 #Step one to get the area code plus prefix
+area_codeFIN = area_code1 //1000 #Step two to break out the area code
+prefix = area_code1 %1000 #Step three to break out the prefix
+line_number = phone_number %10000 #To break out the line number from the original phone_number input
+
+print('('+ str(area_codeFIN) +') '+ str(prefix) + '-' + str(line_number))
