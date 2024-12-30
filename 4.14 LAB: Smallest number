@@ -1,0 +1,11 @@
+num_1 = int(input())
+num_2 = int(input())
+num_3 = int(input())
+
+#num_merge = min(num_1, num_2, num_3)
+
+#print(num_merge)
+#Woohoo!  Both ways will work!  Using num_merge above and combining into my print statement below.
+#I was just playing around to see if I could write it into my print statement.
+
+print(f'{min(num_1, num_2, num_3)}')
