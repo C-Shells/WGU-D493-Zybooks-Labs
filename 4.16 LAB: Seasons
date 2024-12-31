@@ -1,0 +1,52 @@
+input_month = input()
+input_day = int(input())
+
+#creating ranges for months that are split between seasons - remember, the last number needs to be one higher (exclusive)
+winter_range_March = range(1,21)
+spring_range_March = range(20,32)
+spring_range_June = range(1,21)
+summer_range_June = range(21,31)
+summer_range_Sept = range(1,22)
+autumn_range_Sept = range(22,30)
+autumn_range_Dec = range(1,21)
+winter_range_Dec = range(20,32)
+#Full months listed below - months that aren't split between seasons
+month_30 = range (1,31) # Months with 30 days - April and Nov
+month_31 = range (1,32) # Months with 31 days - May, July, Aug, Oct, Jan
+month_29 = range (1,30) # Feb, because February doesn't play nice
+
+
+if (input_month == 'January') and input_day in month_31:
+    print ('Winter')
+elif (input_month == 'February') and input_day in month_29:
+    print ('Winter')
+elif (input_month == 'March') and input_day in winter_range_March:
+    print ('Winter')    
+elif (input_month == 'March') and input_day in spring_range_March:
+    print ('Spring')    
+elif (input_month == 'April') and input_day in month_30:
+    print ('Spring')
+elif (input_month == 'May') and input_day in month_31:
+    print ('Spring')
+elif (input_month == 'June') and input_day in spring_range_June:
+    print ('Spring')
+elif (input_month == 'June') and input_day in summer_range_June:
+    print ('Summer')    
+elif (input_month == 'July') and input_day in month_31:
+    print ('Summer')    
+elif (input_month == 'August') and input_day in month_31:
+    print ('Summer')
+elif (input_month == 'September') and input_day in summer_range_Sept:
+    print ('Summer') 
+elif (input_month == 'September') and input_day in autumn_range_Sept:
+    print ('Autumn')   
+elif (input_month == 'October') and input_day in month_31:
+    print ('Autumn')    
+elif (input_month == 'November') and input_day in month_30:
+    print ('Autumn')
+elif (input_month == 'December') and input_day in autumn_range_Dec:
+    print ('Autumn')
+elif (input_month == 'December') and input_day in winter_range_Dec:
+    print ('Winter')
+else:
+    print ('Invalid')
