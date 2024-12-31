@@ -1,0 +1,28 @@
+is_leap_year = False
+   
+input_year = int(input())
+calc = float(0) #Used later on to hold a calculation
+calc_remainder = float(0) #used later on to hold a calculation
+
+century_indicator = int(input_year %100) #breaking out the last 2 digits of the year to see if it is 00
+
+if century_indicator == 0: #Will go down this path if the year is a century
+    calc = input_year / 400 #Will divide year by 400
+    calc_remainder = calc % 1  #Using the modulo operator to see if there is a remainder
+    if calc_remainder > 0: #Anything higher than 0 is a remainder and therefore not divisible by 400
+        is_leap_year = False
+    else:
+        is_leap_year = True
+
+else:
+    calc = input_year / 4
+    calc_remainder = calc % 1  
+    if calc_remainder > 0:
+        is_leap_year = False
+    else:
+        is_leap_year = True
+
+if is_leap_year == False:
+    print (input_year, '- not a leap year')
+else:
+    print (input_year, '- leap year')
