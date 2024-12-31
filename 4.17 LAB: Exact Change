@@ -1,0 +1,46 @@
+change_amount = int(input())
+
+dollars = change_amount // 100
+change_calc = change_amount - (dollars * 100)
+quarters = change_calc // 25
+change_calc = change_calc - (quarters * 25)
+dimes = change_calc // 10
+change_calc = change_calc - (dimes * 10)
+nickels = change_calc // 5
+change_calc = change_calc - (nickels * 5)
+pennies = change_calc // 1
+change_calc = pennies
+
+
+if change_amount <= 0:
+    print ('No change')
+
+if dollars >= 1:
+    if dollars == 1:
+        print (dollars, 'Dollar')
+    if dollars > 1:
+        print (dollars, 'Dollars')
+
+if quarters >= 1:
+    if quarters == 1:
+        print (quarters, 'Quarter')
+    if quarters > 1:
+        print (quarters, 'Quarters')
+        
+if dimes >= 1:
+    if dimes == 1:
+        print (dimes, 'Dime')
+    if dimes > 1:
+        print (dimes, 'Dimes')
+        
+if nickels >= 1:
+    if nickels == 1:
+        print (nickels, 'Nickel')
+    if nickels > 1:
+        print (nickels, 'Nickels')
+        
+if pennies >= 1 :
+    if pennies == 1:
+        print (pennies, 'Penny')
+    if pennies > 1:
+        print (pennies, 'Pennies')
