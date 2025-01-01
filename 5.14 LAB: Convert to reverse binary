@@ -1,0 +1,7 @@
+number = int(input())
+
+while number > 0:
+    calc = number % 2
+    print (calc, end='')
+    number = number // 2
+print()    
