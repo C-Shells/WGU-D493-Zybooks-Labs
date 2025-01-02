@@ -1,0 +1,15 @@
+number = int(input())
+
+values = []
+
+iteration = 1
+while iteration <= number:
+    value_input = float(input())
+    values.append(value_input)
+    iteration = iteration + 1
+
+maximum = max(values)
+ 
+for value_input in values:
+    value_input = value_input / maximum
+    print (f'{value_input:.2f}')
