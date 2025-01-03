@@ -1,3 +1,7 @@
+#NOTE:  Currently this code does not work with negative input ranges.  Need to fix that.
+
+
+
 import math
 def fibonacci(n):
     start_number = int(math.ceil(n / 3))
