@@ -6,6 +6,9 @@
 #Your function may be missing a return statement or 
 #returned an incorrect amount of values."
 
+#I have tried adding the input values as shown below when calling the function
+#as well as writing the separate user_val() values as separate input statements thinking maybe the autograder would want it that way.  Neither will pass.
+
 
 # Define your function here.
 def swap_values(user_val1, user_val2, user_val3, user_val4):
