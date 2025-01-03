@@ -1,0 +1,24 @@
+#NOTE!!!!  Currently this code is producing the desired output but the auto grader is saying my output doesn't return 4 values, when it clearly does...
+#I'm looking into why this would be occuring.  Swapping the values is accurately happening.  4 values are being returned, but I get this error.
+
+#E.G.  "Your output:  10 -1 -6 4
+#Error "swap_values(-1, 10, 4, -6) did not return four values.
+#Your function may be missing a return statement or 
+#returned an incorrect amount of values."
+
+
+# Define your function here.
+def swap_values(user_val1, user_val2, user_val3, user_val4):
+    hold_value = user_val1
+    user_val1 = user_val2
+    user_val2 = hold_value
+    hold_value = user_val3
+    user_val3 = user_val4
+    user_val4 = hold_value
+   # user_value_list = [user_val1, user_val2, user_val3, user_val4]
+    return print(f'{user_val1} {user_val2} {user_val3} {user_val4}')
+    
+
+if __name__ == '__main__': 
+    # Type your code here. Your code must call the function.
+    swap_values(int(input()), int(input()), int(input()), int(input()))
