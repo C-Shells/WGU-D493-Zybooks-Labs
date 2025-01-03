@@ -1,0 +1,24 @@
+import math
+def fibonacci(n):
+    start_number = int(math.ceil(n / 3))
+    num_1 = 0
+    num_2 = 1
+    calc_1 = 0
+    
+    fib_list = [num_1, num_2]
+    
+    for i in range(start_number):
+        calc_1 = num_1 + num_2
+        fib_list.append (calc_1)
+        num_1 = calc_1 + num_2
+        fib_list.append (num_1)
+        num_2 = calc_1 + num_1
+        fib_list.append (num_2)
+    for i in range(len(fib_list)):    
+        return fib_list[n]
+        
+
+
+if __name__ == '__main__':
+    start_num = int(input())
+    print(f'fibonacci({start_num}) is {fibonacci(start_num)}')
